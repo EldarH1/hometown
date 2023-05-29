@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="CSS/Gallery.css">
+</head>
+<body>
+
+<hr width="100%" size="1" color="black" align="left" noshade="">
+
+<div class="navigation">
+    <a class="nav-item nav-link" href="Sarajevo.html">Sarajevo</a>
+    <a class="nav-item nav-link" href="CV - Eldar.html">About me</a>
+    <a class="nav-item nav-link" href="History - Sarajevo.html">About Sarajevo</a>
+    <a class="nav-item nav-link" href="Contact us form.html">Contact us</a>
+</div>
+
+<h1> Gallery </h1>
+
+<div class="content">
+    <div class="row">
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo3.jpeg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="box"><img class="gallery-img" src="Images/Sarajevo4.jpg"
+                              onclick="showBigPicture(event)">
+
+        </div>
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo5.jpg" onclick="showBigPicture(event)">
+        </div>
+    </div>
+    <div class="row">
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo6.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="box"><img class="gallery-img" src="Images/Sarajevo7.jpg" 
+                              onclick="showBigPicture(event)">
+        </div>
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo8.jpg" onclick=" showBigPicture(event)">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo9.jpg""
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo10.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo11.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+    </div>
+    <div class="row">
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo12.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo13.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+        <div class="box">
+            <img class="gallery-img" src="Images/Sarajevo14.jpg"
+                 onclick="showBigPicture(event)">
+        </div>
+    </div>
+</div>
+<script>
+    function showBigPicture($event) {
+        location.href = `Gallery (2).html?q=${$event.target.src}`;
+    }
+</script>
+</body>
+</html>

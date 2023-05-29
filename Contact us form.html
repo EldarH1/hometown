@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="css/Contact us form.css">
+
+</head>
+<body>
+<header>
+
+<hr width="100%" size="1" color="black" align="left" noshade="">
+    <div class="navigation">
+        <a href="Sarajevo.html">Sarajevo</a>
+        <a href="CV - Eldar.html">About me</a>
+        <a href="History - Sarajevo.html">About Sarajevo</a>
+        <a href="Gallery (1).html">Gallery</a>
+    </div>
+
+
+
+<h1>Contact us</h1>
+</header>
+
+
+<div class="footer container">
+    <form id="contact">
+        <input name="fullName" type="text" placeholder="Eldar"/>
+        <input name="email" placeholder="someaddress@example.com">
+        <textarea name="message"
+                  placeholder="Comment"
+                  rows="3"></textarea>
+        <div class="row">
+            <div class="box-5">
+                <button onclick="getValues()" type="button" class="default-btn"
+                        style="width: 200px;padding: .3em 0">Send
+                </button>
+            </div>
+            <div class="box-5">
+                <button onclick="resetForm()" type="button" class="sec-btn"
+                        style="width: 200px;padding: .3em 0">Reset
+                </button>
+            </div>
+        </div>
+    </form>
+
+    
+</div>
+<script>
+    const contactForm = document.getElementById('contact');
+
+    function getValues() {
+        const formData = new FormData(document.forms.namedItem('contact'));
+        document.getElementById('message').innerText = `Full name: ${formData.get('fullName')}, \nEmail:${formData.get('email')} \n Message:${formData.get('message')}\``
+    }
+
+    function resetForm() {
+        document.getElementById('message').innerText = 'Message empty'
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+}
+
+body {
+     background-color: #fff0cf;
+}
+
+.cv{
+   background-color: #fff;
+   margin: 2em 10em;
+   padding: 5em;
+}
+
+.navigation {
+    text-align: center;
+    font-size: 25px;  
+    background: #F2E7E7;
+}
+       
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}

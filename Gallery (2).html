@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Big Image</title>
+    <link rel="stylesheet" href="CSS/Big images.css">
+
+</head>
+<body>
+<header>
+<div class="navigation">
+    <a class="nav-item nav-link" href="Sarajevo.html">Sarajevo</a>
+    <a class="nav-item nav-link" href="CV - Eldar.html">About me</a>
+    <a class="nav-item nav-link" href="History - Sarajevo.html">About Sarajevo</a>
+    <a class="nav-item nav-link" href="Contact us form.html">Contact us</a>
+</div>
+</header>
+<pre>
+</pre>
+
+<div class="text-center custom-container">
+    <img id="big-image" class="img-fluid" width="100%">
+    <div class="text-right">
+        <button style="width: 100%;margin-top: 2em" onclick="getBack()">Back</button>
+    </div>
+</div>
+</body>
+
+<script>
+    document.getElementById('big-image').src = new URLSearchParams(window.location.search).get('q')
+
+    function getBack() {
+        history.back();
+    }
+</script>
+</html>

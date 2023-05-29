@@ -1,0 +1,47 @@
+body {
+    background: #FFEFBA; 
+}
+
+
+h1 {
+   text-align: center;
+}
+
+h2 {
+   font-size:140%;
+   font-weight: bold;
+   font-size: 200%;
+   text-align: center;
+}
+
+.navigation{
+    text-align: center;
+    background: #F2E7E7;
+    font-size: 25px;  
+}
+
+p {
+   font-size:100%;
+    color: #brown;
+}
+
+.box{
+    margin-right: 2em;
+    margin-top: 2em;
+    padding-right: 2em;
+    border-right: 1px solid #ff8543;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #002c52;
+    font-weight: bold;
+    text-align: left;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
